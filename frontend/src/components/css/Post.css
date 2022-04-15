@@ -1,0 +1,188 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 120px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  
+  .post-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-info > h4 {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .post-info > h4:hover {
+    text-decoration: underline;
+  }
+  
+  .post-info > small {
+    margin-left: 10px;
+  }
+  
+  .post-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-body > .post-question {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .post-ques > .postb-ans {
+    margin-left: auto;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(64, 112, 108);
+    outline: none;
+    border: none;
+    color: rgb(242, 233, 233);
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 40px;
+  }
+  
+  .postb-ans:hover {
+    color: rgb(241, 241, 248);
+    background: rgb(115, 79, 79);
+  }
+  
+  .post-ques > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .post-body > .post-answered > p {
+    margin-bottom: 10px;
+  }
+  
+  /* .post__image {
+    background: rgb(0, 140, 255);
+  } */
+  
+  .post-body > img {
+    width: 100%;
+    object-fit: contain;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .post-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+  }
+  
+  .post-footer > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .post-footeraction {
+    background-color: lightgray;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 33px;
+  }
+  .post-footeraction > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .post-footeraction > .MuiSvgIcon-root:hover {
+    color: rgb(0, 140, 255);
+    margin-right: 40px;
+  }
+  
+  .post-footerleft {
+    margin-left: auto;
+  }
+  
+  .post-footerleft > .MuiSvgIcon-root {
+    color: gray;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  .modal-question {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .modal-question > h1 {
+    color: #0b4d61;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .modal-question > p {
+    color: gray;
+    font-size: small;
+  }
+  
+  .modal-question > p > .name {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .modal-answer {
+    display: flex;
+    padding-top: 20px;
+    flex: 1;
+  }
+  
+  .modal-answer > textarea {
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    font-size: 15px;
+    color: blue;
+  }
+  
+  .modal-button {
+    display: flex;
+    align-items: center;
+    margin-right: -20px;
+    border-top: 1px solid rgb(254, 245, 245);
+  }
+  
+  .modal-button > .cancel {
+    margin-left: auto;
+    border: none;
+    margin-top: 60px;
+    color: rgb(90, 87, 87);
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .modal-button > .add {
+    border: none;
+    margin-top: 60px;
+    background-color: rgb(30, 65, 50);
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    margin-right: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
