@@ -12,11 +12,37 @@ import CloseIcon from '@material-ui/icons/Close';
 import { useState } from 'react';
 import { ExpandMore } from '@material-ui/icons';
 import'react-responsive-modal/styles.css'
+import axios from 'axios'
 
 function Quoraheader() {
 
     const [isModalOpen,setIsModalOpen]=useState(false);
-    const Close=(<CloseIcon/>)
+    const[question,setQuestion]=useState("");
+    const Close=(<CloseIcon/>);
+
+    const handleSubmit=async() => {
+        if (question !=="") {
+
+            const config ={
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            };
+            const body={
+                questionName: question
+            }
+            await axios.post('/api/questions', body,config).then((res) => {
+            console.log(res.data);
+            alert(res.data.message);
+            window.location.href='/';
+        }).catch((e) => {
+            console.log(e);
+            alert('Question was not uploaded.Try again.')
+        });
+
+        }
+
+    };
     
   return (
     <div className='qheader'>
@@ -33,7 +59,7 @@ function Quoraheader() {
                 </div>
                 <div className='qheader-input'>
                     <Search />
-                    <input type="text" placeholder="Search your question..."></input> 
+                    <input type="text" placeholder="Search your question..." ></input> 
                 </div>
                 <div className='qheader-rem'>
                     <Avatar />
@@ -66,7 +92,10 @@ function Quoraheader() {
                             </div> 
                     </div>
                     <div className='modal-field'>
-                        <Input type="text" placeholder='Write your question here...'/>
+                        <Input 
+                        value={question}
+                        onChange={(e) => setQuestion(e.target.value)}
+                        type="text" placeholder='Write your question here...'/>
                     <div style={{
                         diplay:"flex",
                         flexDirection:"column",
@@ -78,7 +107,7 @@ function Quoraheader() {
                         <button className='cancel' onClick={() => setIsModalOpen (false)}>
                             Cancel
                             </button>
-                            <button type="submit" className='add' >
+                            <button onClick={handleSubmit} type="submit" className='add' >
                             Add
                             </button>
                        

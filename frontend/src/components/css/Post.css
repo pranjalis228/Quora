@@ -45,7 +45,7 @@
     margin-left: auto;
     cursor: pointer;
     padding: 5px;
-    background-color: rgb(64, 112, 108);
+    background-color: rgb(51, 95, 91);
     outline: none;
     border: none;
     color: rgb(242, 233, 233);
@@ -59,27 +59,13 @@
     background: rgb(115, 79, 79);
   }
   
-  .post-ques > p:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  
   
   .post-body > .post-answered > p {
     margin-bottom: 10px;
   }
   
-  /* .post__image {
-    background: rgb(0, 140, 255);
-  } */
   
-  .post-body > img {
-    width: 100%;
-    object-fit: contain;
-    background-color: rgb(238, 238, 238);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
   
   .post-footer {
     display: flex;
@@ -89,7 +75,7 @@
   
   .post-footer > .MuiSvgIcon-root {
     color: gray;
-    margin-right: 40px;
+    margin-right: 65px;
     cursor: pointer;
   }
   
@@ -111,11 +97,11 @@
     margin-right: 40px;
   }
   
-  .post-footerleft {
+  .post_footerleft {
     margin-left: auto;
   }
   
-  .post-footerleft > .MuiSvgIcon-root {
+  .post_footerleft > .MuiSvgIcon-root {
     color: gray;
     cursor: pointer;
     margin-left: 30px;
@@ -154,14 +140,13 @@
     height: 500px;
     padding: 5px;
     font-size: 15px;
-    color: blue;
+    color: rgb(63, 63, 108);
   }
   
   .modal-button {
     display: flex;
     align-items: center;
     margin-right: -20px;
-    border-top: 1px solid rgb(254, 245, 245);
   }
   
   .modal-button > .cancel {
@@ -186,3 +171,24 @@
     border-radius: 20px;
     cursor: pointer;
   }
+
+  #votes{
+    font-size:15px;
+    font-weight:bold
+  }
+
+  button{
+    padding: 2px 12px;
+    color:black;
+    border: 5px black;
+    border: radius 2px;
+    user-select:none;
+    font-weight:bold;
+    cursor:pointer;
+  }
+
+ button :focus{
+   outline:none;
+ }
+
+  

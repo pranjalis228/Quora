@@ -90,23 +90,23 @@
   .qheader-Avatar {
     cursor: pointer;
   }
-  .qheader-Rem {
+  .qheader-rem {
     display: flex;
     align-items: center;
     margin-left: 25px;
   }
   
-  .qheader-Rem > .MuiSvgIcon-root {
+  .qheader-rem > .MuiSvgIcon-root {
     font-size: xx-large;
     color: gray;
     margin-left: 25px;
     cursor: pointer;
   }
-  .qheader-Rem > .MuiSvgIcon-root:hover {
+  .qheader-rem > .MuiSvgIcon-root:hover {
     color: #000;
   }
   
-  .qheader-Rem > .MuiButton-root {
+  .qheader-rem > .MuiButton-root {
     color: white;
     background: #222;
     text-transform: inherit;
@@ -114,7 +114,7 @@
     margin-left: 25px;
   }
   
-  .qheader-Rem > .MuiButton-root:hover {
+  .qheader-rem > .MuiButton-root:hover {
     color: #222;
     background: rgb(214, 214, 214);
   }
